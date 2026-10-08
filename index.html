@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0d1117" />
+<meta name="description" content="IT 运维工具箱：CIDR/子网计算、Windows/Linux 命令生成器、VMware/Citrix 常用命令、Base64/JSON/时间戳等文本工具" />
+<title>IT 运维工具箱</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B0%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">🧰 IT 运维工具箱</a>
+  <nav><a href="#/">首页</a></nav>
+</header>
+<main id="app"></main>
+<footer class="foot">纯前端运行 · 数据不出浏览器 · v1.0</footer>
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js');
+  });
+}
+</script>
+</body>
+</html>
